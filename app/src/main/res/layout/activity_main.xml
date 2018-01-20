@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ali.sound.MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="My Sound System"
+       android:id="@+id/textjudul"
+       android:gravity="center_horizontal"
+       android:textStyle="bold"
+       android:textColor="#00f0ff"/>
+
+    <Button
+        android:onClick="playaudio"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Sound"
+        android:id="@+id/playsound"
+        android:layout_below="@id/textjudul"/>
+
+    <Button
+        android:onClick="pauseaudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playsound"
+        android:text="Pause"
+        android:id="@+id/pause"
+        />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekbarvolume"
+        android:layout_below="@id/pause"/>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekduration"
+        android:layout_below="@id/seekbarvolume"/>
+
+</RelativeLayout>
